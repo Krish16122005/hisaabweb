@@ -1,0 +1,531 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Darker gray for better readability than pure black */
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #F7B500; /* Accent color for plan names */
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #F7B500; /* Accent color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8; /* Light gray background for header */
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #F7B500; /* Accent color for logo */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #F7B500;
+    text-decoration: none;
+}
+
+/* Main Content Sections */
+main section {
+    padding: 2em;
+    border-bottom: 1px solid #eee; /* Separator for sections */
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 3em 2em;
+    background-color: #f4f4f4; /* Light background for hero */
+}
+
+#hero h1 {
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#hero button {
+    background-color: #F7B500;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #e0a800; /* Darker shade of accent on hover */
+}
+
+/* Pricing Section */
+#pricing {
+    text-align: center;
+}
+
+#pricing h2 {
+    margin-bottom: 1em;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow plans to wrap on smaller screens */
+}
+
+.plan {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1em;
+    width: 300px; /* Fixed width for plan cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.plan:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.plan h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #F7B500;
+    padding-bottom: 0.5em;
+}
+
+.plan .price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #F7B500; /* Accent color for price */
+    margin: 0.5em 0;
+}
+
+.plan .description {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.plan ul li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plan ul li:last-child {
+    border-bottom: none;
+}
+
+/* Benefits Section */
+#benefits {
+    text-align: center;
+}
+
+#benefits h2 {
+    margin-bottom: 1em;
+}
+
+#benefits ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block; /* Center the list */
+    text-align: left;
+}
+
+#benefits ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5em; /* Space for a potential icon or custom bullet */
+    position: relative;
+}
+
+#benefits ul li::before { /* Custom bullet example */
+    content: "✓"; /* Checkmark icon */
+    color: #F7B500; /* Accent color for bullet */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 2em;
+}
+
+footer p {
+    margin: 0 0 0.5em 0;
+}
+
+.social-media a {
+    color: #F7B500; /* Accent color for social links */
+    margin: 0 0.5em;
+    font-size: 1.2em;
+}
+
+.social-media a:hover {
+    color: #fff; /* White on hover for contrast with dark footer */
+}
+
+/* Contact Demo Section */
+#contact-demo {
+    background-color: #f9f9f9; /* Light background for the section */
+    text-align: center;
+}
+
+#contact-demo h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+#contact-demo form {
+    max-width: 500px; /* Limit form width for better readability */
+    margin: 0 auto; /* Center the form */
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contact-demo form div {
+    margin-bottom: 1em;
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+#contact-demo label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #555;
+}
+
+#contact-demo input[type="text"],
+#contact-demo input[type="email"],
+#contact-demo input[type="tel"],
+#contact-demo input[type="number"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#contact-demo input[type="text"]:focus,
+#contact-demo input[type="email"]:focus,
+#contact-demo input[type="tel"]:focus,
+#contact-demo input[type="number"]:focus {
+    border-color: #F7B500;
+    outline: none;
+    box-shadow: 0 0 5px rgba(247, 181, 0, 0.5);
+}
+
+#contact-demo button[type="submit"] {
+    background-color: #F7B500;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button full width */
+}
+
+#contact-demo button[type="submit"]:hover {
+    background-color: #e0a800; /* Darker shade of accent on hover */
+}
+
+
+/* Responsive adjustments */
+
+/* Tablet and larger mobile devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em; /* Adjust padding */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    header nav ul li {
+        margin: 0.8em 0; /* Increase spacing for tappability */
+    }
+
+    header nav ul li a {
+        padding: 0.5em 0; /* Add padding to links for easier tapping */
+    }
+
+    main section {
+        padding: 1.5em 1em; /* Adjust padding for sections */
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    #hero {
+        padding: 2em 1em;
+    }
+
+    #hero h1 {
+        font-size: 2em; /* Adjusted from previous */
+    }
+
+    #hero p {
+        font-size: 1.1em; /* Adjusted for better readability */
+    }
+
+    #hero button {
+        padding: 0.8em 1.2em;
+        font-size: 1em;
+    }
+
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        max-width: 350px; /* Add max-width to prevent becoming too wide */
+        margin-bottom: 1.5em;
+        padding: 1.2em;
+    }
+
+    #benefits ul li {
+        font-size: 1em;
+        padding-left: 2em; /* Ensure space for bullet */
+    }
+
+    #benefits ul li::before {
+        left: 0.5em; /* Adjust bullet position */
+    }
+
+    #contact-demo form {
+        width: 90%;
+        max-width: 450px; /* Add max-width */
+        padding: 1.5em;
+    }
+
+    #contact-demo label {
+        font-size: 0.95em;
+    }
+
+    #contact-demo input[type="text"],
+    #contact-demo input[type="email"],
+    #contact-demo input[type="tel"],
+    #contact-demo input[type="number"] {
+        padding: 0.7em;
+        font-size: 0.95em;
+    }
+
+    #contact-demo button[type="submit"] {
+        padding: 0.7em 1.2em;
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 1em 1em;
+    }
+
+    .social-media a {
+        margin: 0 0.3em;
+        font-size: 1.1em;
+    }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 480px) {
+    body {
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    header {
+        padding: 0.8em;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+    }
+
+    header nav ul li a {
+        font-size: 0.95em;
+    }
+
+    main section {
+        padding: 1em 0.8em;
+    }
+
+    #hero {
+        padding: 1.5em 0.8em;
+    }
+
+    #hero h1 {
+        font-size: 1.7em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #hero button {
+        width: 100%; /* Make hero button full width */
+        padding: 0.9em 1em;
+        font-size: 1em;
+    }
+
+    .plan {
+        width: 95%; /* Slightly more width for very small screens */
+        padding: 1em;
+    }
+
+    .plan .price {
+        font-size: 1.5em;
+    }
+
+    .plan ul li {
+        padding: 0.4em 0;
+        font-size: 0.9em;
+    }
+
+    #benefits ul {
+        padding: 0 1em; /* Add padding to parent ul to contain list items */
+    }
+
+    #benefits ul li {
+        font-size: 0.95em;
+        padding-left: 1.8em; /* Adjust space for bullet */
+    }
+
+    #benefits ul li::before {
+        left: 0.2em; /* Adjust bullet position */
+    }
+
+
+    #contact-demo form {
+        padding: 1em;
+        width: 95%;
+    }
+
+    #contact-demo input[type="text"],
+    #contact-demo input[type="email"],
+    #contact-demo input[type="tel"],
+    #contact-demo input[type="number"] {
+        padding: 0.6em;
+        font-size: 0.9em;
+         width: calc(100% - 20px); /* Adjust width considering padding and border */
+    }
+
+    #contact-demo button[type="submit"] {
+        padding: 0.8em 1em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    .social-media a {
+        font-size: 1em;
+    }
+}
